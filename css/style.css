@@ -1,0 +1,280 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 11px;
+}
+p {
+  font-size: 13px;
+}
+i {
+  font-size: 10px;
+  color: #fff;
+}
+button {
+  background-color: #000;
+  border: none;
+}
+
+/*   SWIPER CSS  */
+
+.swiper {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+}
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+.swiper-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  font-size: 50px;
+  text-align: center;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 50px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-next, .swiper-button-prev {
+  padding: 0px 15px;
+}
+.foto-mala-carousel {
+  padding: 125px;
+}
+.foto-mala-carousel1{
+  width: 100%;
+  height: 130px;
+}
+
+.div-image {
+  display: block;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  font-size: 50px;
+  text-align: center;
+}
+.imagen1carousel{
+  width: 50px;
+  height: auto;
+  display: flex;
+  text-align: center;
+} 
+#solicita-tu-turno {
+  background-color: #2f2f2f ;
+  padding: 4px 35px;
+  position: relative;
+  bottom: 45px;
+  font-size: 10px;
+}
+#solicita-tu-turno:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+ /*  Primer div "QUIENES SOMOMS" de texto con imagen CSS */
+
+
+#primer-texto-imagen {
+  text-align: center;
+  background-color: #000;
+  padding: 18px;
+}
+#primer-texto {
+  margin-bottom: 30px;
+}
+#primer-texto-imagen p, #primer-texto-imagen h4 {
+  color: #fff;
+}
+#primer-texto-imagen a  {
+  background-color: #363535;
+  padding: 10px 15px;
+}
+#primer-texto-imagen a:hover{
+  background-color: #fff;
+  color: #000;
+}
+#primera-imagen {
+  margin-top: 25px;
+}
+#primera-imagen img {
+  width: 100%;
+}
+
+/* Segundo div "FUNDADOR" de texto con imagen CSS */
+
+
+#segundo-texto-imagen {
+  text-align: center;
+  padding: 12px;
+}
+
+/*  Tercer div "SERVICIOS" de texto con imagen   */
+
+
+#tercer-texto-imagen {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+#divs-terceros {
+  width: 50%;
+}
+#div-tecero {
+  width: 100%;
+  color: #fff;
+  padding: 3px;
+  border-bottom: 1px outset #9a9797;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#div-tercero-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+#div-tercero-button a {
+  background-color: #363535;
+  padding: 4px 6px;
+
+}
+#div-tercero-button a:hover{
+  background-color: #fff;
+  color: #000;
+}
+#tercer-div-imagen {
+  width: 30%;
+  margin-top: 27px;
+}
+#tercer-div-imagen img {
+  width: 100%;
+}
+#cuarto-div-marcas {
+  text-align: center;
+}
+#title-marcas {
+  font-size: 15px;
+  padding: 15px 30px;
+
+}
+
+/*  Cuarto div "MARCAS" de texto con imagen  */
+
+
+#cuarto-div-products {
+  padding-bottom: 35px;
+}
+#cuarto-div-products a {
+  padding: 10px 50px; 
+  color: #fff;
+  background-color: #363535;
+}
+#description-price {
+  margin-bottom: 35px;
+}
+#cuarto-div-products a:hover {
+  background-color: #a3a2a2;
+  color: #dcd7d7;
+}
+#cuarto-div-products img {
+  width: 80%;
+  text-align: center;
+}
+#div-products a {
+  padding: 15px 20px;
+  font-size: 15px;
+  background-color: #636161;
+  position: relative;
+  top : 33px;
+  right: 118px;
+}
+#cuarto-div-marcas1 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0;
+}
+#cuarto-div-marcas1 input {
+  text-align: center;
+  width: 50%;
+  margin-bottom: 5px;
+  padding: 5px;
+  border: 3px solid #9a9797;
+}
+#cuarto-div-marcas1 a {
+  background-color: #000;
+  color: #fff;
+  padding: 9px 47px;
+}
+#cuarto-div-marcas1 a:hover {
+  background-color:#636161;
+  color: #dcd7d7;
+}
+#cuarto-p1 {
+  font-size: 18px;
+  margin: 0px;
+}
+
+/*  Article "SUCURSALES" de texto con imagen CSS  */
+
+#article-sucursales {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  padding: 30px 0;
+}
+#article-sucursales a {
+  padding: 8px 40px ;
+  background-color: #363535;
+}
+#article-sucursales a:hover {
+  background-color: #fff;
+  color: #000;
+}
+#article-sucursales h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+#article-div {
+  width: 50%;
+  padding-bottom: 25px;
+}
+#article-div p, #article-div h3 {
+  color: #fff;
+}
+#div-img-direccion img {
+  width: 100%;
+}
+
+
+
+
+
+
+
