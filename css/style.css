@@ -31,7 +31,7 @@ button {
 
 .swiper {
   width: 100%;
-  height: auto;
+  height: 150px;
   background-color: #000;
 }
 .swiper-wrapper {
@@ -50,6 +50,7 @@ button {
   text-align: center;
   font-size: 50px;
   background: #000;
+  width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,14 +58,39 @@ button {
 .swiper-button-next, .swiper-button-prev {
   padding: 0px 15px;
 }
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7px;
+}
+.img-flaot1 {
+  position: relative;
+  top: 40px;
+  left: 130px;
+  width: 100px;
+}
+.img-flaot1 img {
+  position: relative;
+  bottom: 172px;
+  left: 19px;
+}
+.img-float2 {
+  position: relative;
+  top: 20px;
+  left: 150px;
+  width: 100px;
+}
+.img-float2 img {
+  position: relative;
+  bottom: 150px;
+}
 .foto-mala-carousel {
-  padding: 125px;
+  position: relative;
+  bottom: 70px;
+  left: 12px;
+  width: 100px;
+  padding: 130px;
 }
-.foto-mala-carousel1{
-  width: 100%;
-  height: 130px;
-}
-
 .div-image {
   display: block;
   width: 100%;
@@ -81,9 +107,9 @@ button {
 } 
 #solicita-tu-turno {
   background-color: #2f2f2f ;
-  padding: 4px 35px;
+  padding: 4px 25px;
   position: relative;
-  bottom: 45px;
+  bottom: 130px;
   font-size: 10px;
 }
 #solicita-tu-turno:hover {
@@ -102,14 +128,20 @@ button {
 #primer-texto {
   margin-bottom: 30px;
 }
+#primer-texto p { 
+  margin-bottom: 20px;
+}
 #primer-texto-imagen p, #primer-texto-imagen h4 {
   color: #fff;
 }
-#primer-texto-imagen a  {
+#primerte-texto-a  {
+  margin-top: 30px;
+}
+#primerte-texto-a a  {
   background-color: #363535;
   padding: 10px 15px;
 }
-#primer-texto-imagen a:hover{
+#primerte-texto-a a:hover{
   background-color: #fff;
   color: #000;
 }
@@ -125,7 +157,7 @@ button {
 
 #segundo-texto-imagen {
   text-align: center;
-  padding: 12px;
+  padding: 25px 10px 40px
 }
 
 /*  Tercer div "SERVICIOS" de texto con imagen   */
@@ -134,12 +166,13 @@ button {
 #tercer-texto-imagen {
   background-color: #000;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   padding-bottom: 20px;
 }
 #divs-terceros {
-  width: 50%;
+  width: 90%;
 }
 #div-tecero {
   width: 100%;
@@ -150,41 +183,73 @@ button {
   align-items: center;
   justify-content: space-between;
 }
-#div-tercero-button {
+#div-tecero a {
+  margin: 10px 0;
+}
+#div-tercero {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
-#div-tercero-button a {
+#div-tercero a {
   background-color: #363535;
-  padding: 4px 6px;
-
+  padding: 10px 30px;
 }
-#div-tercero-button a:hover{
+#div-tercero a:hover{
   background-color: #fff;
   color: #000;
 }
 #tercer-div-imagen {
-  width: 30%;
+  width: 80%;
   margin-top: 27px;
 }
 #tercer-div-imagen img {
   width: 100%;
+  text-align: center;
 }
+
+/*  Cuarto div "MARCAS" de texto con imagen  */
+
+
 #cuarto-div-marcas {
   text-align: center;
 }
 #title-marcas {
   font-size: 15px;
   padding: 15px 30px;
-
+  text-align: center;
 }
-
-/*  Cuarto div "MARCAS" de texto con imagen  */
-
-
+#article-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #cuarto-div-products {
   padding-bottom: 35px;
+  width: 300px;
+  width: 100%;
+  text-align: center
+}
+#cuarto-div-products:hover {
+  color: #a3a2a2;
+}
+#marca-img  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+#marca-img button{
+  padding: 5px 10px;
+  background-color: #363535;
+  color: #fff;
+  position: relative;
+  top: 25px;
+  right: 99px;
+}
+#marca-img img {
+  width: 250px;
+  height: 250px;
 }
 #cuarto-div-products a {
   padding: 10px 50px; 
@@ -197,18 +262,6 @@ button {
 #cuarto-div-products a:hover {
   background-color: #a3a2a2;
   color: #dcd7d7;
-}
-#cuarto-div-products img {
-  width: 80%;
-  text-align: center;
-}
-#div-products a {
-  padding: 15px 20px;
-  font-size: 15px;
-  background-color: #636161;
-  position: relative;
-  top : 33px;
-  right: 118px;
 }
 #cuarto-div-marcas1 {
   text-align: center;
@@ -240,41 +293,275 @@ button {
 
 /*  Article "SUCURSALES" de texto con imagen CSS  */
 
-#article-sucursales {
+#section {
   background-color: #000;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  text-align: center;
-  align-items: center;
-  padding: 30px 0;
+  padding-bottom: 40px;
 }
-#article-sucursales a {
-  padding: 8px 40px ;
-  background-color: #363535;
-}
-#article-sucursales a:hover {
-  background-color: #fff;
-  color: #000;
-}
-#article-sucursales h2 {
-  color: #fff;
+#section-h2 {
+  margin-top: 30px;
   margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+#articles-divs {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 #article-div {
-  width: 50%;
-  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
 }
-#article-div p, #article-div h3 {
+#article-div h3 ,#article-div p {
   color: #fff;
+  margin: 5px;
+}
+#div-img-direccion {
+  display: flex;
+  align-items: center;
+  width: 50%;
 }
 #div-img-direccion img {
   width: 100%;
+  margin-bottom: 10px;
+}
+#mas-info {
+  text-align: center;
+}
+#mas-info a {
+  background-color: #363535;
+  padding: 5px 15px;
+}
+#mas-info a:hover {
+  background-color:#636161;
+  color: #e4e3e3;
 }
 
 
+@media (min-width:481px) {
 
 
+  /*   SWIPER CSS  */
+
+
+  .swiper {
+    height: 335px;
+;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    padding: 0px 50px;
+  }
+  .swiper-pagination {
+    margin-bottom: 20px;
+  }
+  .swiper-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    font-size: 50px;
+    text-align: center;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 50px;
+    background: #000;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+  .foto-mala-carousel {
+    bottom: 15px;
+    left: 100px;
+    width: 300px;
+  }
+  .img-flaot1 {
+    position: relative;
+    bottom: -150px;
+    left: 228px;
+    width: 300px;
+  }
+  .img-flaot1 img {
+    position: relative;
+    bottom: 300px;
+    left: 9px;
+  }
+  .img-float2 {
+    position: relative;
+    left: 235px;
+    width: 300px;
+  }
+  .img-float2 img {
+    position: relative;
+    bottom: 280px;
+  } 
+  #solicita-tu-turno {
+    padding: 11px 45px;
+    bottom: 170px;
+    left: 6px;
+    font-size: 18px;
+  }
+  
+
+  
+  /*  Primer div "QUIENES SOMOMS" de texto con imagen CSS */
+
+
+  #primer-texto-imagen {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  #primer-texto {
+    width: 35%;
+    margin-bottom: 30px;
+  }
+  #primer-texto-imagen p, #primer-texto-imagen h4 {
+    text-align: right;
+    color: #fff;
+  }
+  #primera-imagen {
+    margin-top: 47px;
+    width: 60%;
+  /* font-size: 12px; */
+  }
+  #primer-texto p { 
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+  #primerte-texto-a {
+    margin-top: 30px;
+    text-align: right;
+    
+  }
+
+  /* Segundo div "FUNDADOR" de texto con imagen CSS */
+
+
+  #segundo-texto-imagen {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 97%;
+  }
+  #segundo-p {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 45%;
+  }
+  #segundo-p p {
+    width: 80%;
+  }
+  #segundo-imagen {
+    display: flex;
+    align-items: flex-end;
+    width: 50%;
+  }
+  #segundo-imagen img {
+    width: 100%;
+  }
+
+  /*  Tercer div "SERVICIOS" de texto con imagen   */
+
+
+  #tercer-texto-imagen {
+    flex-direction: row;
+    padding-bottom: 30px;
+  }
+  #divs-terceros {
+    width: 50%;
+  }
+  #div-tecero {
+    width: 100%;
+    color: #fff;
+    padding: 3px;
+    border-bottom: 1px outset #9a9797;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #tercer-div-imagen {
+    width: 28%;
+    margin-top: 27px;
+  }
+
+  /*  Cuarto div "MARCAS" de texto con imagen  */
+  
+  
+  #title-marcas p{
+    font-size: 25px;
+  }
+  #article-products {
+    flex-direction: row;
+    width: 100%;
+  }
+  #cuarto-div-marcas1 input {
+    width: 35%;
+    margin-bottom: 8px;
+    font-size: 18px;
+    padding: 7px 27px;
+  }
+  #cuarto-div-marcas1 a {
+    font-size: 15px;
+    padding: 12px 83px;
+  }
+  #cuarto-div-marcas1 a:hover {
+    background-color:#636161;
+    color: #dcd7d7;
+  }
+  #cuarto-p1 {
+    font-size: 28px;
+    margin: 0px;
+  }
+  #cuarto-p2 {
+    font-size: 22px;
+  }
+
+  /*  Article "SUCURSALES" de texto con imagen CSS  */
+
+
+  #section {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+  #articles-divs {
+    flex-direction: row;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  #article-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  #div-img-direccion {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  #div-img-direccion img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #mas-info {
+    text-align: left;
+  }
+  #mas-info a {
+    text-align: left;
+    background-color: #363535;
+    padding: 10px 30px;
+  }
+}
 
 
 
