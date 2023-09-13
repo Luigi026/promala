@@ -2,46 +2,83 @@
 <html lang="en">
     <%- include('partials/head') %>
 <body id="body_form">
-    <form action="">
+    <form action="" method="POST">
         <fieldset id="fieldset">
             <legend>Creacion De Perfil</legend>
 
                     <!-- N O M B R E -->
                 <div id="div-label-input">
-                    <label for="">Nombre :</label>
-                    <input type="text" placeholder="Ingrese su nombre">
+                    <div id="label-input">
+                       <div id="div-label">
+                            <label for="name">Nombre :</label>
+                       </div>
+                        <div>
+                            <input id="name" name="name" type="text" placeholder="Ingrese su nombre" value="<%= locals.old && (old.name && old.name) %>">
+                        </div>
+                        <!-- Si existe errors en locals entonces comparame lo otro --> <!-- Si existe error.name entonces mostrame el mensaje del metodo errors (msg) -->   
+                        <div id="small">
+                            <small><%= locals.errors && (errors.name && errors.name.msg) %></small>
+                        </div>
+                    </div>
                 </div>
+               
+                    <!-- locals: es un objeto que se encarga de almacenar la informacion que se envia del controlador a la vista -->
     
-                    <!-- E M A  I L -->
+                    <!-- E M A I L -->
                 <div id="div-label-input">
-                    <label for="">Email :</label>
-                    <input type="text" placeholder="Ingrese su email">
+                    <div id="label-input">
+                        <div id="div-label">
+                            <label for="email">Email :</label>
+                        </div>
+                        <div>
+                            <input name="email" id="email" type="text" placeholder="Ingrese su email" value="<%= locals.old && (old.email && old.email) %>">
+                        </div>
+                        <div id="small">
+                            <small><%= locals.errors && (errors.email && errors.email.msg) %></small>
+                        </div>
+                    </div>    
                 </div>
-    
+
                     <!-- E D A D -->
                 <div id="div-label-input">
-                    <label for="">Edad :</label>
-                    <input type="text" placeholder="Ingrese su edad">
+                    <div id="label-input">
+                        <div id="div-label">
+                            <label for="edad">Edad :</label>
+                        </div>
+                        <div>
+                            <input name="edad" id="edad" type="text" placeholder="Ingrese su edad" value="<%= locals.old && (old.edad && old.edad) %>">
+                        </div>
+                        <div id="small">
+                            <small><%= locals.errors && (errors.edad && errors.edad.msg) %></small>
+                        </div>
+                    </div>
                 </div>
 
                     <!-- S E L E C T -->
                     <div id="div-label-input">
-                        <select name="" id="">
-                            <option value="" hidden>Seleccione un color</option>
-                            <option value="">Rojo</option>
-                            <option value="">Amarillo</option>
-                            <option value="">Verde</option>
-                            <option value="">Azul</option>
-                        </select>
+                        <div id="label-input">
+                            <div id="div-label">
+                                <label for="Recordar" style="color: white;">Recordar</label>        
+                                <input id="Recordar" type="checkbox">
+                            </div>
+                            <select name="color" id="" value="<%= locals.old && (old.color && old.color) %>">
+                                <option value="" hidden>Seleccione un color</option>
+                                <option value="">Rojo</option>
+                                <option value="">Amarillo</option>
+                                <option value="">Verde</option>
+                                <option value="">Azul</option>
+                            </select>
+                            <div id="small">
+                                <small><%= locals.errors && (errors.color && errors.color.msg) %></small>
+                            </div>
+                        </div>
                     </div>
-
+                    
                     <!-- B U T T O N -->
                 <div>
-                    <button id="button">Ingresar</button>
+                    <button type="submit" id="button">Ingresar</button>
                 </div>
         </fieldset>
     </form>
-        
-  
 </body>
 </html>
