@@ -6,9 +6,8 @@
 }
 #body_form form {
     width: 94%;
-    display: flex;
-    height: auto;
-    margin-top: 40px;
+    display: flex;  
+    margin-top: 25px;
     display: flex;
     text-align: center;
     background-color: #000;
@@ -41,7 +40,7 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 #div-label-input label {
     color: #fff;
@@ -64,7 +63,7 @@
     box-shadow: none;
 }
 #div-label-input select {
-    padding: 10px 35px;
+    padding: 10px;
     border-radius: 8px;
     font-size: 15px;
     width: 65%;
@@ -75,9 +74,9 @@
 }    
 #small {
     position: relative;
-    left: 70px;
+    left: 69px;
     margin-top: 2px;
-    width: 72%;  
+    width: 70%;  
 }
 #small small {
     display: flex;

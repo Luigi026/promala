@@ -1,12 +1,11 @@
 module.exports = {
 
-    register : (req, res) => {
-        res.render('register')
-    },
-    login : (req, res) => {
-        res.render('login')
-    },
-    profile : (req, res) => {
-        res.render('profile')
-    }
+    register : require('./users/register'),
+    processRegister : require('./users/processRegister'),
+    login : require('./users/login'),
+    processLogin : require('./users/processLogin'),
+    profile : require('./users/profile'),
+    update : require('./users/update'),
+    logout : require('./users/logout'),
+   
 }

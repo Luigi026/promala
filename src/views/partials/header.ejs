@@ -1,0 +1,23 @@
+<header style="background-color: black;" class="home__header">
+    <div class="home__header--box-logo rotate-vert-center">
+        <img style="background-color: #000000;" class="home__header--logo " src="/img/imagen-carousel.webp" alt="logo_kitchening">
+    </div>
+    <a href="" class="home__header--bars"><i class="fa fa-bars fa-lg"></i></a>
+    <nav class="home__header__nav--menu">
+        <ul>
+            <li><a href="/">home</a></li>
+            <li><a href="/quienes">quienes</a></li>
+            <li><a href="/servicios">servicios</a></li>
+            <% if (locals.userLogin) { %>
+                <% if (userLogin.role === "admin") { %>
+                    <li><a href="/admin">ADMIN</a></li>
+                <% } %>
+                <li><a href="/users/profile">Hola <%= userLogin.name %>!</a></li>
+                <li><a href="/users/logout">salir</a></li>
+            <% }else{ %>
+            <li><a href="/users/register">registro</a></li>
+            <li><a href="/users/login">ingresar</a></li>
+            <% } %>
+        </ul>
+    </nav>
+</header>

@@ -1,0 +1,29 @@
+[
+   {
+      "id": "6a6aa0ab-ff37-4a4a-8958-68f7dc02677a",
+      "name": "Luigi",
+      "surname": "Navarro",
+      "email": "luigi@navarro.com",
+      "password": "$2a$10$UCRXIJ6DBeBtzux21G.W8.XIdGMsPXXH.DLsPzsuhnqexiH2Uq3jG",
+      "role": "admin",
+      "createAt": "2023-09-14T05:03:09.481Z"
+   },
+   {
+      "id": "45ee845c-f1b6-4c95-b52f-d87c940290e7",
+      "name": "andres",
+      "surname": "olivera",
+      "email": "andres@a.com",
+      "password": "$2a$10$9fXsOQ2UfpEh.XOvBA4Vj.6Oezllb/2fPdnZFe4otXhKf9x4DFPri",
+      "role": "user",
+      "createAt": "2023-09-14T05:11:00.824Z"
+   },
+   {
+      "id": "c784d97b-5c98-4f14-99f4-36a9225d67cf",
+      "name": "abril",
+      "surname": "neciosup",
+      "email": "abril@gmail.com",
+      "password": "$2a$10$sWN564tXw/IH17Y0Ek319eF2agTlCIfMX7hJzBBYVAgmg1JqnIZpK",
+      "role": "user",
+      "createAt": "2023-09-14T06:00:40.052Z"
+   }
+]
