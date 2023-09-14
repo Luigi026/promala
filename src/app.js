@@ -8,6 +8,7 @@ const session = require('express-session')
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const userSessionCheck = require('./middlewares/userSessionCheck');
+const cookieCheck = require('./middlewares/cookieCheck');
 
 const app = express();
 
@@ -25,7 +26,8 @@ app.use(session({
   resave : true,
   saveUninitialized : true
 }))
-app.use(userSessionCheck)
+app.use(cookieCheck) //checkeo si existe una cookie, para poder levantar session de esa cookie, de lo contrario no voy a poder pasar informacion a locals
+app.use(userSessionCheck) // checkea que el usuario este logeado para poder mandarle informacion a locals
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

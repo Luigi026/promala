@@ -1,20 +1,15 @@
 [
    {
-      "id": "6a6aa0ab-ff37-4a4a-8958-68f7dc02677a",
-      "name": "Luigi",
-      "surname": "Navarro",
-      "email": "luigi@navarro.com",
-      "password": "$2a$10$UCRXIJ6DBeBtzux21G.W8.XIdGMsPXXH.DLsPzsuhnqexiH2Uq3jG",
-      "role": "admin",
-      "createAt": "2023-09-14T05:03:09.481Z"
-   },
-   {
       "id": "45ee845c-f1b6-4c95-b52f-d87c940290e7",
       "name": "andres",
       "surname": "olivera",
       "email": "andres@a.com",
       "password": "$2a$10$9fXsOQ2UfpEh.XOvBA4Vj.6Oezllb/2fPdnZFe4otXhKf9x4DFPri",
-      "role": "user",
+      "role": "admin",
+      "birthday" : null,
+      "address" : null,
+      "province" : null,
+      "city" : null,
       "createAt": "2023-09-14T05:11:00.824Z"
    },
    {
@@ -24,6 +19,23 @@
       "email": "abril@gmail.com",
       "password": "$2a$10$sWN564tXw/IH17Y0Ek319eF2agTlCIfMX7hJzBBYVAgmg1JqnIZpK",
       "role": "user",
+      "birthday" : null,
+      "address" : null,
+      "province" : null,
+      "city" : null,
       "createAt": "2023-09-14T06:00:40.052Z"
+   },
+   {
+      "id": "18e929d9-3c67-48f5-85e1-24b16a79d69b",
+      "name": "luigi",
+      "surname": "navarro",
+      "email": "luigi.navarro026@gmail.com",
+      "password": "$2a$10$GOXW.GnAErNA38aJlStsoOXMNUHImCHirVV8jozaix5l96VxPMiCe",
+      "role": "user",
+      "birthday" : null,
+      "address" : null,
+      "province" : null,
+      "city" : null,
+      "createAt": "2023-09-14T21:07:05.221Z"
    }
 ]

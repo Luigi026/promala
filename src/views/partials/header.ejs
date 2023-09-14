@@ -9,7 +9,7 @@
             <li><a href="/quienes">quienes</a></li>
             <li><a href="/servicios">servicios</a></li>
             <% if (locals.userLogin) { %>
-                <% if (userLogin.role === "admin") { %>
+                <% if (userLogin.role === "admin") { %> <!-- Si es que el role del usuario es administrador entonces mostrame la condicion -->
                     <li><a href="/admin">ADMIN</a></li>
                 <% } %>
                 <li><a href="/users/profile">Hola <%= userLogin.name %>!</a></li>
